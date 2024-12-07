@@ -1,0 +1,6 @@
+C:\Users\BG\Documents\Visual Studio 2022\Bulky\Bulky.DataAccess\obj\Debug\net7.0\Bulky.DataAccess.csproj.AssemblyReference.cache
+C:\Users\BG\Documents\Visual Studio 2022\Bulky\Bulky.DataAccess\obj\Debug\net7.0\Bulky.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BG\Documents\Visual Studio 2022\Bulky\Bulky.DataAccess\obj\Debug\net7.0\Bulky.DataAccess.AssemblyInfoInputs.cache
+C:\Users\BG\Documents\Visual Studio 2022\Bulky\Bulky.DataAccess\obj\Debug\net7.0\Bulky.DataAccess.AssemblyInfo.cs
+C:\Users\BG\Documents\Visual Studio 2022\Bulky\Bulky.DataAccess\obj\Debug\net7.0\Bulky.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\BG\Documents\Visual Studio 2022\Bulky\Bulky.DataAccess\obj\Debug\net7.0\Bulky.DataAccess.sourcelink.json
