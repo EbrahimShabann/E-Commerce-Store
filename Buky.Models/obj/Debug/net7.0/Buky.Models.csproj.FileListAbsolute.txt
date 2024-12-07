@@ -1,0 +1,14 @@
+C:\Users\BG\Documents\Visual Studio 2022\Bulky\Buky.Models\bin\Debug\net7.0\Buky.Models.deps.json
+C:\Users\BG\Documents\Visual Studio 2022\Bulky\Buky.Models\bin\Debug\net7.0\Buky.Models.runtimeconfig.json
+C:\Users\BG\Documents\Visual Studio 2022\Bulky\Buky.Models\bin\Debug\net7.0\Buky.Models.dll
+C:\Users\BG\Documents\Visual Studio 2022\Bulky\Buky.Models\bin\Debug\net7.0\Buky.Models.pdb
+C:\Users\BG\Documents\Visual Studio 2022\Bulky\Buky.Models\obj\Debug\net7.0\Buky.Models.csproj.AssemblyReference.cache
+C:\Users\BG\Documents\Visual Studio 2022\Bulky\Buky.Models\obj\Debug\net7.0\Buky.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BG\Documents\Visual Studio 2022\Bulky\Buky.Models\obj\Debug\net7.0\Buky.Models.AssemblyInfoInputs.cache
+C:\Users\BG\Documents\Visual Studio 2022\Bulky\Buky.Models\obj\Debug\net7.0\Buky.Models.AssemblyInfo.cs
+C:\Users\BG\Documents\Visual Studio 2022\Bulky\Buky.Models\obj\Debug\net7.0\Buky.Models.csproj.CoreCompileInputs.cache
+C:\Users\BG\Documents\Visual Studio 2022\Bulky\Buky.Models\obj\Debug\net7.0\Buky.Models.dll
+C:\Users\BG\Documents\Visual Studio 2022\Bulky\Buky.Models\obj\Debug\net7.0\refint\Buky.Models.dll
+C:\Users\BG\Documents\Visual Studio 2022\Bulky\Buky.Models\obj\Debug\net7.0\Buky.Models.pdb
+C:\Users\BG\Documents\Visual Studio 2022\Bulky\Buky.Models\obj\Debug\net7.0\Buky.Models.genruntimeconfig.cache
+C:\Users\BG\Documents\Visual Studio 2022\Bulky\Buky.Models\obj\Debug\net7.0\ref\Buky.Models.dll
