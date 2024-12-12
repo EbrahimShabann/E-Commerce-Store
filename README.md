@@ -45,3 +45,4 @@ This project is an E-Commerce Store Web Application developed using .NET Core. T
 1. Clone the repository:  
    ```bash
    git clone https://github.com/nadaawad25/LibrarySystem.Api.git
+gh repo clone EbrahimShabann/E-Commerce-Store
