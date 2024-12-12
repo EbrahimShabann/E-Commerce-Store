@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Product>
+<div class="row pb-3">
+	@foreach(var product in Model)
+	{
+		<div class="col-lg-3 col-sm-0">
+			<div class="row p-3">
+				<div class="col-12 p-6">
+					<div class="card border-0 p-2 shadow border-top border-4 rounded">
+						@if(product.ProductImages!=null && product.ProductImages.Count() > 0)
+						{
+							<img src="@product.ProductImages.FirstOrDefault().ImageUrl" width="100%"
+							style="border-radius:5px; border:1px solid #bbb9b9" />
+						}
+						else
+						{
+							<img src="https://placehold.co/500x600/png" class="card-img-top rounded" />
+
+						}
+						@**@
+							 <div class="card-body pb-0 ">
+								 <div class="pl-1">
+								 <p class="card-title h5 text-dark text-opacity-90 text-center">@product.Name</p>
+								 <p class="card-title  text-bg-warning  text-center">for <b>@product.Category.Name</b></p>
+								 </div>
+								 <div class="pl-1">
+								<p class="text-dark text-opacity-75  text-center mb-0">List Price:<span class="text-decoration-line-through">@product.ListPrice.ToString("c")</span></p>
+								<p class="text-dark text-opacity-75 text-center  ">as low as:<b>@product.Price50.ToString("c")</b></p>
+							     </div>
+							 </div>
+							 <div>
+								 <a asp-action="Details" asp-route-ProductId="@product.Id"
+									 class="btn btn-primary bg-gradient border-0 form-control">
+									 Details
+								 </a>
+						     </div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	}
+</div>

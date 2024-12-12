@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BulkyWeb Api", "BulkyWeb Api.csproj", "{38E11450-E0D7-493C-A28F-E0010FEA6ECA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAcessLayer", "..\DataAcessLayer\DataAcessLayer.csproj", "{7C720550-B28D-4632-A418-A9CB537D57CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38E11450-E0D7-493C-A28F-E0010FEA6ECA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38E11450-E0D7-493C-A28F-E0010FEA6ECA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38E11450-E0D7-493C-A28F-E0010FEA6ECA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38E11450-E0D7-493C-A28F-E0010FEA6ECA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C720550-B28D-4632-A418-A9CB537D57CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C720550-B28D-4632-A418-A9CB537D57CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C720550-B28D-4632-A418-A9CB537D57CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C720550-B28D-4632-A418-A9CB537D57CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C26F775D-C015-4D1F-BF74-BBA75B60FDFD}
+	EndGlobalSection
+EndGlobal

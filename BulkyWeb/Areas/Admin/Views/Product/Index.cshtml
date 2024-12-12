@@ -1,0 +1,73 @@
+﻿@model List<Product>
+<partial name="_Tembdata"/>
+
+<div class="card shadow border-0 mt-4">
+	<div class="card-header bg-dark bg-gradient ml-0 py-3">
+		<div class="row">
+			<div class="col-12 text-center">
+				<h2 class="text-white"> Product List </h2>
+
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container mt-4">
+	<div class="row pt-0">
+		
+		<div class="col-12 text-end ">
+			<a asp-controller="Product" asp-action="Upsert" class="btn  btn-primary">
+				<i class="bi bi-bookmark-plus"></i> Create New Product
+			</a>
+		</div>
+	</div>
+	<div class="row pt-3">
+		<table @* id="myTable" *@ class="table table-bordered table-striped  ">
+		<thead>
+			<tr>
+				<th>
+					Product Name
+				</th>
+				<th>
+					Product Brand
+				</th>
+				<th>
+					List Price
+				</th>
+				
+				<th>
+					 Description
+				</th>
+				<th>
+
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach(var item in Model)
+			{
+				<tr>
+					<td>@item.Name</td>
+					<td>@item.Brand</td>
+					<td>@item.ListPrice</td>
+					<td>@item.Description</td>
+						<td>
+							<div class="w-75 btn btn-group " role="group">
+								<a asp-controller="Product" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary mx-2">
+									<i class="bi bi-pencil-square"></i> Edit
+								</a>
+								<a asp-controller="Product" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger mx-2">
+									<i class="bi bi-trash"></i> Delete
+								</a>
+							</div>
+						</td>
+				</tr>
+			}
+		</tbody>
+		
+			
+	</table>
+	</div>
+</div>
+@* @section Scripts{
+	<script src="~/js/product.js"></script>
+} *@

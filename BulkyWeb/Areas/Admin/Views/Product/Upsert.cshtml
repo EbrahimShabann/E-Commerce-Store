@@ -1,0 +1,115 @@
+﻿@model ProductVM
+
+<div class="card shadow border-0 mt-4">
+	<div class="card-header bg-dark bg-gradient ml-0 py-3">
+	<div class="row">
+		<div class="col-12 text-center">
+				<h2 class="text-white">@(Model.Product.Id != 0 ? "Update" : "Create") Product </h2>
+				
+		</div>
+	</div>
+	</div>
+</div>
+
+<form method="post" enctype="multipart/form-data">
+	<input asp-for="Product.Id " hidden />
+
+	<div class="row">
+		<div class="col-10">
+			<div class="border p-3 mt-4">
+				
+				<div asp-validation-summary="All"></div>
+				<div class="mb-3 row p-1">
+					<label asp-for="Product.Name" class="p-0"></label>
+					<input asp-for="Product.Name" class=" form-control" />
+					<span asp-validation-for="Product.Name" class="text-danger"></span>
+				</div>
+				<div class="mb-3 row p-1">
+					<label asp-for="Product.Brand" class="p-0"></label>
+					<input asp-for="Product.Brand" class=" form-control" />
+					<span asp-validation-for="Product.Brand" class="text-danger"></span>
+				</div>
+				<div class="mb-3 row p-1">
+					<label asp-for="Product.Description" class="p-0"></label>
+					<input asp-for="Product.Description" class=" form-control" />
+					<span asp-validation-for="Product.Description" class="text-danger"></span>
+				</div>
+				<div class="mb-3 row p-1">
+					<label asp-for="Product.ListPrice" class="p-0"></label>
+					<input asp-for="Product.ListPrice" class=" form-control" />
+					<span asp-validation-for="Product.ListPrice" class="text-danger"></span>
+				</div>
+				<div class="mb-3 row p-1">
+					<label asp-for="Product.Price1" class="p-0"></label>
+					<input asp-for="Product.Price1" class=" form-control" />
+					<span asp-validation-for="Product.Price1" class="text-danger"></span>
+				</div>
+				<div class="mb-3 row p-1">
+					<label asp-for="Product.Price50" class="p-0"></label>
+					<input asp-for="Product.Price50" class=" form-control" />
+					<span asp-validation-for="Product.Price50" class="text-danger"></span>
+				</div>
+				<div class="mb-3 row p-1">
+					<label asp-for="Product.Price100" class="p-0"></label>
+					<input asp-for="Product.Price100" class=" form-control" />
+					<span asp-validation-for="Product.Price100" class="text-danger"></span>
+				</div>
+				<div class="mb-3 row p-1">
+					<label asp-for="Product.CategoryId" class="p-0"></label>
+					<select asp-for="Product.CategoryId" asp-items="@Model.CategoryList" class=" form-select">
+						<option disabled selected>--Select Category--</option>
+					</select>
+					<span asp-validation-for="Product.CategoryId" class="text-danger"></span>
+				</div>
+				 <div class="mb-3 row p-1">
+					<label asp-for="Product.ProductImages" class="p-0"></label>
+					<input type="file" name="files" class=" form-control" multiple>
+
+				</div> 
+				<div class="row ">
+					<div class=" col-6">
+						@if (Model.Product.Id != 0)
+						{
+							<button type="submit" class="btn btn-primary form-control">Update</button>
+						}
+						else
+						{
+							<button type="submit" class="btn btn-primary form-control">Create</button>
+						}
+					</div>
+					<div class="col-6 ">
+						<a asp-controller="Product" asp-action="Index" class="btn btn-secondary form-control">Back to List</a>
+
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="col-2">
+		@if (Model.Product.ProductImages != null)
+		{
+			@foreach (var image in Model.Product.ProductImages)
+			{
+					<div class="border p-3 mt-4 text-center ">
+					<img src="@image.ImageUrl" class="card-img-top rounded " width="100%" /> 
+					<a asp-action="DeleteImage" class="btn btn-danger m-1 " asp-route-imageId="@image.Id">
+							<i class="bi bi-trash"></i> Delete
+						</a>
+
+				</div>
+			}
+		}
+		</div>
+		
+	</div>
+	
+		
+	
+</form>
+
+@section Scripts{
+	@{
+		<partial name="_ValidationScriptsPartial" />
+	}
+
+}

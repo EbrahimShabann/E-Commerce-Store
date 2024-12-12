@@ -1,0 +1,79 @@
+﻿@model Company
+
+<div class="card shadow border-0 mt-4">
+	<div class="card-header bg-dark bg-gradient ml-0 py-3">
+	<div class="row">
+		<div class="col-12 text-center">
+				<h2 class="text-white">@(Model.Id != 0 ? "Update" : "Add") Company </h2>
+				
+		</div>
+	</div>
+	</div>
+</div>
+
+<form method="post" enctype="multipart/form-data">
+	<input asp-for="Id " hidden />
+
+	<div class="row">
+		<div class="col-10">
+			<div class="border p-3 mt-4">
+				
+				<div asp-validation-summary="All"></div>
+				<div class="mb-3 row p-1">
+					<label asp-for="Name" class="p-0"></label>
+					<input asp-for="Name" class=" form-control" />
+					<span asp-validation-for="Name" class="text-danger"></span>
+				</div>
+				<div class="mb-3 row p-1">
+					<label asp-for="StreetAddress" class="p-0"></label>
+					<input asp-for="StreetAddress" class=" form-control" />
+					<span asp-validation-for="StreetAddress" class="text-danger"></span>
+				</div>
+				<div class="mb-3 row p-1">
+					<label asp-for="City" class="p-0"></label>
+					<input asp-for="City" class=" form-control" />
+					<span asp-validation-for="City" class="text-danger"></span>
+				</div>
+				<div class="mb-3 row p-1">
+					<label asp-for="Country" class="p-0"></label>
+					<input asp-for="Country" class=" form-control" />
+					<span asp-validation-for="Country" class="text-danger"></span>
+				</div>
+				<div class="mb-3 row p-1">
+					<label asp-for="PhoneNumber" class="p-0"></label>
+					<input asp-for="PhoneNumber" class=" form-control" />
+					<span asp-validation-for="PhoneNumber" class="text-danger"></span>
+				</div>
+				
+				
+				<div class="row ">
+					<div class=" col-6">
+						@if (Model.Id != 0)
+						{
+							<button type="submit" class="btn btn-primary form-control">Update</button>
+						}
+						else
+						{
+							<button type="submit" class="btn btn-primary form-control">Add</button>
+						}
+					</div>
+					<div class="col-6 ">
+						<a asp-controller="Company" asp-action="Index" class="btn btn-secondary form-control">Back to List</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+		
+	
+</form>
+
+@section Scripts{
+	@{
+		<partial name="_ValidationScriptsPartial" />
+	}
+
+}
